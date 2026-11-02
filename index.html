@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Berard — Music Producer & Filmmaker</title>
+    <style>
+        /* 1. Global Styles & Dark Theme */
+        :root {
+            --bg-color: #0f0f10;
+            --text-color: #e0e0e0;
+            --accent-color: #888888;
+            --max-width: 800px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            padding: 60px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        main {
+            width: 100%;
+            max-width: var(--max-width);
+        }
+
+        /* 2. Header & Profile Section Layout */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            margin-bottom: 50px;
+            border-bottom: 1px solid #222222;
+            padding-bottom: 40px;
+        }
+
+        .header-text {
+            flex: 1;
+        }
+
+        h1 {
+            font-size: 2.3rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: #ffffff;
+            margin-bottom: 4px;
+        }
+
+        .subtitle {
+            font-size: 1.05rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 16px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-size: 0.95rem;
+        }
+
+        .contact-info a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-info a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        .cv-link {
+            display: inline-block;
+            margin-top: 4px;
+            color: #ffffff !important;
+            font-weight: 500;
+        }
+
+        /* Proportionally Sized Profile Photo */
+        .profile-img-container {
+            flex-shrink: 0;
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid #2a2a2a;
+            background-color: #1a1a1a;
+        }
+
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* 3. Media Embed Containers (Responsive 16:9 Aspect Ratio) */
+        .media-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            margin-bottom: 60px;
+        }
+
+        .media-card {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 ratio */
+            height: 0;
+            background-color: #1a1a1a;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .media-title {
+            font-size: 1rem;
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        /* 4. Footer & Links */
+        footer {
+            border-top: 1px solid #222222;
+            padding-top: 25px;
+            display: flex;
+            gap: 20px;
+        }
+
+        footer a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustment for small phone screens */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column-reverse;
+                align-items: flex-start;
+            }
+            .profile-img-container {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <!-- Title & Profile Header -->
+        <header>
+            <div class="header-text">
+                <h1>Gabriel Berard</h1>
+                <p class="subtitle">Music Producer & Filmmaker</p>
+                
+                <div class="contact-info">
+                    <a href="mailto:gabrielberard123@gmail.com">gabrielberard123@gmail.com</a>[cite: 2]
+                    <a href="Gabriel Berard's CV 2026-11-02.pdf" class="cv-link" target="_blank">↓ View CV (PDF)</a>
+                </div>
+            </div>
+            
+            <!-- Profile Photo (IMG_8957.JPEG) -->
+            <div class="profile-img-container">
+                <img src="IMG_8957.JPEG" alt="Gabriel Berard">
+            </div>
+        </header>
+
+        <!-- Media Portfolio Grid -->
+        <section class="media-grid">
+            
+            <!-- YouTube Video 1 -->
+            <div class="media-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/LqnmbnPKS6g?si=djrAotjq_BdcY3La" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p class="media-title">Featured Reel / Project</p>
+            </div>
+
+            <!-- YouTube Video 2 -->
+            <div class="media-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/4Rqp9pEh7P4?si=eqeQwrCyyFzIWNDR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>[cite: 1]
+                </div>
+                <p class="media-title">That's My Story and I'm Sticking to It</p>
+            </div>
+
+            <!-- YouTube Video 3 -->
+            <div class="media-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/-mpfcRo_vKw?si=OhuzTFchtXMOZhh1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>[cite: 1]
+                </div>
+                <p class="media-title">Hi, my name is AI dan</p>
+            </div>
+
+            <!-- SoundCloud Playlist: Gabriel's Horn -->
+            <div class="media-card">
+                <div style="border-radius: 6px; overflow: hidden; background: #1a1a1a;">
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1960969821&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                </div>
+                <p class="media-title">Gabriel's Horn (SoundCloud Playlist)</p>
+            </div>
+
+        </section>
+
+        <!-- Footer Links -->
+        <footer>
+            <a href="mailto:gabrielberard123@gmail.com">Email</a>[cite: 2]
+            <a href="https://youtube.com" target="_blank">YouTube</a>
+        </footer>
+    </main>
+
+</body>
+</html>
